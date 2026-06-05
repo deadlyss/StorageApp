@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StorageApp.Models;
-using StorageApp.Services;
+using StorageApp.DAL.Models;
+using StorageApp.BLL.Interfaces;
 
-namespace StorageApp.Controllers
+namespace StorageApp.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

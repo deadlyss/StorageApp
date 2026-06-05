@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36930.0 d17.14
+VisualStudioVersion = 17.14.36930.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageApp", "StorageApp\StorageApp.csproj", "{CA2B5F77-5CA0-4D61-A7F4-8BDCB1BC08FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageApp.API", "StorageApp\StorageApp.API.csproj", "{CA2B5F77-5CA0-4D61-A7F4-8BDCB1BC08FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C069BAF7-F5EC-4429-B756-BDD321503326} = {C069BAF7-F5EC-4429-B756-BDD321503326}
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC} = {D17F5726-AF4B-4F24-AD63-13D251DD68CC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageApp.DAL", "StorageApp.DAL\StorageApp.DAL.csproj", "{D17F5726-AF4B-4F24-AD63-13D251DD68CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageApp.BLL", "StorageApp.BLL\StorageApp.BLL.csproj", "{C069BAF7-F5EC-4429-B756-BDD321503326}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC} = {D17F5726-AF4B-4F24-AD63-13D251DD68CC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageApp.MVC", "StorageApp.MVC\StorageApp.MVC.csproj", "{222DD00D-FB78-4974-BA9D-B6AF9970F363}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +28,18 @@ Global
 		{CA2B5F77-5CA0-4D61-A7F4-8BDCB1BC08FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA2B5F77-5CA0-4D61-A7F4-8BDCB1BC08FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA2B5F77-5CA0-4D61-A7F4-8BDCB1BC08FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17F5726-AF4B-4F24-AD63-13D251DD68CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C069BAF7-F5EC-4429-B756-BDD321503326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C069BAF7-F5EC-4429-B756-BDD321503326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C069BAF7-F5EC-4429-B756-BDD321503326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C069BAF7-F5EC-4429-B756-BDD321503326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222DD00D-FB78-4974-BA9D-B6AF9970F363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222DD00D-FB78-4974-BA9D-B6AF9970F363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222DD00D-FB78-4974-BA9D-B6AF9970F363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222DD00D-FB78-4974-BA9D-B6AF9970F363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
