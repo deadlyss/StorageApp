@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using StorageApp.Data;
+using StorageApp.BLL.Interfaces;
+using StorageApp.DAL.Data;
 
 #nullable disable
 

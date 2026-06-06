@@ -1,8 +1,10 @@
 
 using Microsoft.EntityFrameworkCore;
-using StorageApp.Data;
-using StorageApp.Repositories;
-using StorageApp.Services;
+using StorageApp.DAL.Data;
+using StorageApp.DAL.Repositories;
+using StorageApp.DAL.Interfaces;
+using StorageApp.BLL.Interfaces;
+using StorageApp.BLL.Services;
 
 namespace StorageApp
 {
