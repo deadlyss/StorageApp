@@ -1,0 +1,35 @@
+﻿@model StorageApp.MVC.Models.ProductViewModel
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label asp-for="CategoryId"></label>
+        <input asp-for="CategoryId" class="form-control" />
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">
+        Create
+    </button>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
